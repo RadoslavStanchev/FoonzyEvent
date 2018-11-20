@@ -1,0 +1,111 @@
+.navigation-main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 5.5em;
+    left: 0;
+    margin-right: 5rem;
+    width: 100%;
+    // background: linear-gradient(to bottom, rgba(35, 7, 77, 1) 60%,rgba(204, 83, 51, 1) 100%);
+    
+    padding: var(--spacing-site);
+    padding-bottom: 5rem;
+}
+
+
+.navigation-main ul {
+    // display: flex;
+    // padding: 0.5rem;
+    // border-radius: 0.3rem;
+    // margin: 0;
+   
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation-main li {
+        display: block;
+        list-style: none outside;
+        padding: 1em;
+        // animation: navitemin 1s 1 ease forwards;
+        
+        // transform: scale(0.1) translate(0, 3rem) rotate(720deg);
+}
+
+.navigation-main ul li a {
+        display: block;
+        padding: 0.5em 1em;
+        font-size: 1em;
+        background: #FFF;
+        text-decoration: none;
+        color: #444;
+        box-shadow:  0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+}
+
+#toggle {
+    position: relative;
+    flex: 0 0 auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+#toggle .fas {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+#toggle .fas.fa-times {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    #toggle {
+        display: flex;
+    }
+
+    .navigation-main {
+        display: none;
+        border-top: 2px solid #000;
+        margin-top: 1rem;
+    }
+
+    .navigation-main ul li a {
+        text-align: center;
+    }
+
+    .navigation-main ul li:not(:first-child) {
+        padding-top: 0.5rem;
+    }
+    
+    #main-nav-toggle:checked + header nav.main {
+        display: block;
+        flex: 1 0 100%;
+    }
+
+    #main-nav-toggle:checked + header #toggle .fa-times {
+        display: block;
+    }
+
+    #main-nav-toggle:checked + header #toggle .fa-bars {
+        display: none;
+    }
+}
+
+@media screen and(min-width: 800px) {
+    .navigation-main ul {
+        display: flex;
+    }
+
+    .navigation-main ul li:hover {
+        display: block;
+    }
+}

@@ -1,0 +1,30 @@
+title: Foonzy
+email: draconissickle@gmail.com
+description: A Step In The Right Direction Towards Entertainment
+
+baseurl: "/jekyll-site-foonzy" 
+url: "" 
+
+twitter_username: RadoslavStanchev
+github_username:  RadoslavStanchev
+
+# Build settings
+future: true
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+destination: docs
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

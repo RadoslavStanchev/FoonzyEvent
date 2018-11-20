@@ -1,0 +1,25 @@
+.site {
+    padding: var(--spacing-site, 2em);
+  
+    @at-root #{&}-content {
+        max-width: 60rem;
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+}
+
+
+
+// .site {
+//     flex: 1 0 auto;
+//     background: #EEE;
+//     border: 4rem solid #FFF;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+//     .site-header {
+//     display: none;
+    
+// }
