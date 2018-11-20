@@ -28,3 +28,10 @@ destination: docs
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+ - Gemfile
+  - Gemfile.lock
+  - package.json
+  - gulpfile.js
+  - docs
+  - node_modules
+  - scss
