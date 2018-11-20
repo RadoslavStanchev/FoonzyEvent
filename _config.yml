@@ -28,6 +28,7 @@ destination: docs
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
  - Gemfile
   - Gemfile.lock
   - package.json
