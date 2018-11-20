@@ -3,6 +3,13 @@ body {
     background-color: #747474;
 }
 
+header img {
+    height: 8rem;
+    margin-left: 2rem;
+    position: relative;
+    bottom: 2.5rem;
+}
+
 .site-branding {
     display: flex;
     flex-direction: column;
