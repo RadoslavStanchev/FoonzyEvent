@@ -13,7 +13,7 @@
 <body>
     <div class="site">
 
-        <!-- <input type="checkbox" id="main-nav-toggle" name="main-nav-toggle"> -->
+        <input type="checkbox" id="main-nav-toggle" name="main-nav-toggle">
         <header class="site-header">
             <div class="wrapper">
 
@@ -23,95 +23,139 @@
                     <p class="site-description">{{ site.description }}</p>
                 </div>
 
-                <!-- <label id="toggle" for="main-nav-toggle">
+                <label id="toggle" for="main-nav-toggle">
                     <i class="fas fa-bars"></i>
                     <i class="fas fa-times"></i>
                     Menu
-                </label> -->
+                </label>
 
-                <img src="../imgs/logo.jpg">  
+                <img src="../imgs/logo.jpg">
 
                 <nav class="navigation-main">
                     <ul>
-                        <li><a class="fas fa-newspaper" href="{{ site.baseurl }}/">Blog</a></li>
-                        <li><a class="fas fa-user-secret" href="{{ site.baseurl }}/about/">About</a></li>
-                        <li><a class="fas fa-envelope" href="{{ site.baseurl }}/contacts/">Contacts</a></li>
-                        <li><a class="fas fa-key" href="{{ site.baseurl }}/login/">Login</a></li>
+                        <li><a class="fas fa-newspaper" href="{{ site.baseurl }}/gallery">Gallery</a></li>
+                        <li><a class="fas fa-user-secret" href="{{ site.baseurl }}/about/">Pricing</a></li>
+                        <li><a class="fas fa-envelope" href="{{ site.baseurl }}/login/">Login</a></li>
+                        <li><a class="fas fa-key" href="{{ site.baseurl }}/register/">Register</a></li>
                     </ul>
 
                 </nav>
 
             </div>
         </header>
+        {{ content }}
+<!-- 
+        <section class="we-offer">
+            <div class="wrapper">
+                <div class="info">
+                    <h2>Prepare to be entertained!</h2>
+                    <p>We offer organizing events and catering at the lowest prices. Choose one of our services - You are in for a treat!</p>
+                </div>
+            </div>
+        </section>
 
-        <main class="site-content">
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe expedita quia magni similique totam maiores
-            minus quam voluptatibus quisquam repellat maxime, esse dolore architecto provident accusantium corrupti
-            aperiam quibusdam consectetur.</p>
+         <section class="team">
+            <div class="wrapper">
+                <header>
+                    <h2>Our Lovely Staff</h2>
+                </header>
+            </div>
 
-            <section class="offer">
-                Quality content here
-            </section>
-        </main>
+            <ul class="list-team">
+                <li class="item">
+                    <section class="profile-pic">
+
+                    </section>
+                    <section class="member-info">
+                        <p class="member">
+                            <span class="name">Andrew</span>
+                            <span class="position">cleaner</span>
+                        </p>
+                        <p class="message">What a wonderful human being!</p>
+                    </section>
+                </li>
+            </ul>
+        </section> -->
+
+
+        <!-- <section class="newsletter">
+                <header>
+                    <h2>Sign-up to our Newsletter and receive 20% discount on your next booking!</h2>
+                </header>
+    
+                <div class="wrapper">
+                    <form action="#" method="post">
+                        <p class="field">
+                            <span class="input">
+                                <input type="text" name="" value="">
+                                <span class="actions"></span>
+                            </span>
+                            <input type="submit" class="button" value="Subscribe" name="">
+                        </p>
+                    </form>
+                </div>
+    </section> --> 
+
 
         <footer class="site-footer">
             <div class="footer-left">
 
-				<h3>Foonzy<span>Events</span></h3>
+                <h3>Foonzy<span>Events</span></h3>
 
-				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
-					
-					<a href="#">Blog</a>
-				
-					<a href="#">Pricing</a>
-				
-					<a href="#">About</a>
-					
-					<a href="#">Faq</a>
-					
-					<a href="#">Contact</a>
-				</p>
+                <p class="footer-links">
+                    <a href="#" class="link-1">Home</a>
 
-				<p class="footer-company-name">Foonzy Events © 2018</p>
-			</div>
+                    <a href="#">Gallery</a>
 
-			<div class="footer-center">
+                    <a href="#">Pricing</a>
 
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
-				</div>
+                    <a href="#">About</a>
 
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+1.555.555.5555</p>
-				</div>
+                    <a href="#">Faq</a>
 
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
-				</div>
+                    <a href="#">Contact</a>
+                </p>
 
-			</div>
+                <p class="footer-company-name">Foonzy Events © 2018</p>
+            </div>
 
-			<div class="footer-right">
+            <div class="footer-center">
 
-				<p class="footer-company-about">
-					<span>About the company</span>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-				</p>
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+                </div>
 
-				<div class="footer-icons">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1.555.555.5555</p>
+                </div>
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">support@company.com</a></p>
+                </div>
 
-				</div>
+            </div>
 
-			</div>
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
+                    lacus vehicula sit amet.
+                </p>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+            </div>
         </footer>
     </div>
 

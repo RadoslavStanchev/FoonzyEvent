@@ -1,22 +1,85 @@
+html {
+    font-family: "Ubunto", sans-serif;
+}
 .site {
-    padding: var(--spacing-site, 2em);
+    // padding: var(--spacing-site, 2em);
   
     @at-root #{&}-content {
-        max-width: 60rem;
-        margin: 0 auto;
-        margin-top: 2rem;
+        max-width: 90rem;
+        margin: 0;
+        margin-top: 0;
     }
 }
 
 .wrapper {
-   
+    // max-width: 70rem;
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 
+section.we-offer .wrapper {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // padding-bottom: 2rem;
+    background: url(../imgs/whatweoffer.jpg);
+    color: white;
+    padding: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 
+section.we-offer .info {
+    border: 2px solid black;
+    color: #272727;
+    text-align: center;
+    width: 50%;
+    margin-left: 15rem;
+    padding: 2rem;
+    font-weight: bold;
+    
+    border-radius: 1em;
+}
+
+section.newsletter {
+    background: #FF652F;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: #FFF;
+    text-align: center;
+}
+
+section.newsletter .button {
+    background: #272727;
+    width: 12%;
+    padding: .5em;
+    text-align: center;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+section.newsletter .button:hover {
+    background: #272727;
+    color: white;
+    box-shadow: 0px 3px 20px 17px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+section.newsletter .input {
+    border-radius: 1em;
+    width: 20%;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+
+section.newsletter .input input {
+    padding: 0.4em;
+    width: 30%;
+}
 // .site {
 //     flex: 1 0 auto;
 //     background: #EEE;
